@@ -1,9 +1,9 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef } from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, ...props }) => {
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     const handleFocus = () => {
