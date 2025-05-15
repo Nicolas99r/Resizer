@@ -10,4 +10,45 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  background-color: #c7f9cc;
+  color: #15415f;
+}
+
+.bg {
+  animation:slide 13s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #80ed99 50%, #57cc99 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:14s;
+}
+
+.bg3 {
+  animation-duration:15s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
